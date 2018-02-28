@@ -8,6 +8,6 @@ app = Flask('MyApp')
 def hello():
     return "hello kittykat"
 
-if __name__ == "__main__"
+if __name__ == "__main__":
 	app.run(debug=True)
 
