@@ -11,8 +11,11 @@ def hello():
 #function that will send a person an email to confirm their subscription to our newsletter
 def send_simple_message(person_contact):
     return requests.post(
-        "https://api.mailgun.net/v3/sandbox300587fa18d34f74bc4b86c6a553b208.mailgun.org/messages",
-        auth=("api", "key-c822d5f589dc282e4ef647920e646a78"),
+        #maybe we need an API key for our trumpcats mailing list? not sure.
+        #took my API key out because mailgun saw I committed this code on github, emailed me, and told me it was concerned for my privacy.
+        #for now I"m just using generic link and no api key
+        "https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages",
+        auth=("api", "API KEY"),
         data={"from": "Your trumpcats pham",
               "to": [person_contact],
               "subject": "Hello",
