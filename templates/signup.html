@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title> Sign up right meow!! </title>
+    <link rel = "stylesheet" type = "text/css" href="{{ url_for("static", filename = "css/styles.css") }}">
+  </head>
+
+  <body>
+  <p>Let's keep in touch!</p>
+        <div id="contact-form">
+            <form method="post"action="/signup">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required="required">
+
+                <label for="YesNo">Yes or No:</label>
+                <input type="checkbox" id="YesNo" name="KeepInTouch" required="required">
+                <input type="submit" value="Submit" id="submitbutton">
+
+  </body>
+
+          </form>
+      </div>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title> Thanks fur keeping up with us! </title>
+    <link rel = "stylesheet" type="text/css" href = "{{ url_for("static", filename="css/styles.css") }}">
+  </head>
+
+  <body>
+    {% if data %}
+    <p>Hello {{data.name}}!</p>
+    <p>Thank you fur subscribing.</p>
+    <p>We'll be sending our frequent updates to {{data.email}}</p>
+    {% else %}
+    <p> No data available! </p>
+    {% endif %}
+  </body>
+
+</html>
